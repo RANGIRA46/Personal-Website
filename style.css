@@ -26,6 +26,10 @@ p {
   font-weight: bold;
 }
 
+.navbar-nav {
+  margin-left: auto;
+}
+
 .navbar-nav .nav-link {
   color: #ffffff !important;
   margin: 0 10px;
@@ -48,8 +52,87 @@ section {
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  text-align: left;
+  flex: 1 1 300px;
+}
+
+.hero-image {
+  text-align: right;
+  flex: 1 1 300px;
+  display: flex;
   justify-content: center;
-  text-align: center;
+}
+
+.phone-frame {
+  width: 187.5px; /* Reduced width to half the original size */
+  height: 333.5px; /* Reduced height to half the original size */
+  background-color: white;
+  border: 8px solid #e6e6e6; /* Reduced border size */
+  border-radius: 18px; /* Reduced border radius */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.phone-top, .phone-bottom {
+  width: 100%;
+  height: 35px; /* Reduced height to half the original size */
+  background-color: #e6e6e6;
+  position: absolute;
+}
+
+.phone-top {
+  top: 0;
+  border-top-left-radius: 18px; /* Reduced border radius */
+  border-top-right-radius: 18px; /* Reduced border radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.phone-bottom {
+  bottom: 0;
+  border-bottom-left-radius: 18px; /* Reduced border radius */
+  border-bottom-right-radius: 18px; /* Reduced border radius */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.camera {
+  width: 6px; /* Reduced size */
+  height: 6px; /* Reduced size */
+  background-color: black;
+  border-radius: 50%;
+}
+
+.home-button {
+  width: 25px; /* Reduced size */
+  height: 25px; /* Reduced size */
+  background-color: #e6e6e6;
+  border: 1px solid #ccc; /* Reduced border size */
+  border-radius: 50%;
+}
+
+.screen {
+  width: 171.5px; /* Reduced width to fit inside the frame */
+  height: 313.5px; /* Reduced height to fit inside the frame */
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;
 }
 
 #hero h1 {
@@ -58,17 +141,6 @@ section {
 
 #hero p {
   font-size: 1.3rem;
-}
-
-#hero .btn {
-  padding: 10px 25px;
-  font-size: 1.2rem;
-  border-radius: 50px;
-  transition: 0.3s;
-}
-
-#hero .btn:hover {
-  background-color: #007bff;
 }
 
 /* Resume Section */
@@ -165,6 +237,11 @@ input::placeholder, textarea::placeholder {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  #hero {
+      flex-direction: column;
+      text-align: center;
+  }
+
   #hero h1 {
       font-size: 2.5rem;
   }

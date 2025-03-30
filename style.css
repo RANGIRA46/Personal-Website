@@ -146,6 +146,16 @@ section {
 /* Resume Section */
 #resume {
   background-color: #1a1a1a;
+  padding: 60px 0;
+}
+
+#resume h2 {
+  margin-bottom: 40px;
+}
+
+#resume h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .list-group-item {
@@ -179,6 +189,10 @@ section {
 /* About Me Section */
 #about {
   background-color: #1a1a1a;
+}
+
+#about p {
+  text-align: justify;
 }
 
 /* Contact Section */

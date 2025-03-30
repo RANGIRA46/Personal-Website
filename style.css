@@ -140,6 +140,29 @@ input::placeholder, textarea::placeholder {
   background-color: #0077cc;
 }
 
+/* Contact Info */
+#contact .contact-info {
+  margin-top: 20px;
+  text-align: left;
+}
+
+#contact .contact-info p {
+  margin: 5px 0;
+}
+
+#contact .contact-info a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+#contact .contact-info a:hover {
+  text-decoration: underline;
+}
+
+#contact .contact-info i {
+  margin-right: 10px;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   #hero h1 {
@@ -156,5 +179,14 @@ input::placeholder, textarea::placeholder {
 
   .navbar-nav .nav-item {
       margin-bottom: 10px;
+  }
+
+  #contact .contact-info {
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+  form {
+      max-width: 100%;
   }
 }

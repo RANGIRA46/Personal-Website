@@ -43,12 +43,16 @@ p {
 
 /* Sections */
 .section {
-  padding: 80px 0;
+  height: 100vh; /* Full viewport height */
   text-align: center;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .section::before {
@@ -65,6 +69,7 @@ p {
 .section .container {
   position: relative;
   z-index: 2;
+  padding: 20px;
 }
 
 #hero {
@@ -80,11 +85,11 @@ p {
 }
 
 #about {
-  background-image: url('images/about-bg.jpg');
+  background-image: url('images/about.jpg');
 }
 
 #contact {
-  background-image: url('images/contact-bg.jpg');
+  background-image: url('images/contact.jpg');
 }
 
 /* Hero Section */
@@ -183,10 +188,6 @@ p {
 }
 
 /* Resume Section */
-#resume {
-  padding: 60px 0;
-}
-
 #resume h2 {
   margin-bottom: 40px;
 }
@@ -221,19 +222,11 @@ p {
 }
 
 /* About Me Section */
-#about {
-  background-color: #1a1a1a;
-}
-
 #about p {
   text-align: justify;
 }
 
 /* Contact Section */
-#contact {
-  background-color: #222;
-}
-
 .contact-card {
   margin-bottom: 20px;
 }
@@ -241,6 +234,15 @@ p {
 .contact-card i {
   font-size: 2rem;
   color: #00aaff;
+}
+
+.contact-card p {
+  margin: 10px 0 0;
+  color: white;
+}
+
+.contact-card.bg-dark-grey {
+  background-color: #333;
 }
 
 form {

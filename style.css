@@ -200,6 +200,15 @@ section {
   background-color: #222;
 }
 
+.contact-card {
+  margin-bottom: 20px;
+}
+
+.contact-card i {
+  font-size: 2rem;
+  color: #00aaff;
+}
+
 form {
   max-width: 500px;
   margin: auto;

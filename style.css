@@ -48,18 +48,35 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  position: relative;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+}
+
+.section .container {
+  position: relative;
+  z-index: 2;
 }
 
 #hero {
-  background-image: url('images/hero-bg.jpg');
+  background-image: url('images/profile.jpeg');
 }
 
 #resume {
-  background-image: url('images/resume-bg.jpg');
+  background-image: url('images/resume.jpg');
 }
 
 #projects {
-  background-image: url('images/projects-bg.jpg');
+  background-image: url('images/project.jpg');
 }
 
 #about {

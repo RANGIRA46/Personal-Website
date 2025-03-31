@@ -1,30 +1,33 @@
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  color: #e0e0e0; /* light grey */
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  background-color: #121212; /* very dark grey */
 }
 
 h1, h2, h3, h4, h5 {
   font-weight: bold;
+  color: #ffffff; /* white */
 }
 
 p {
   font-size: 1.1rem;
-  color: #bbb;
+  color: #e0e0e0; /* light grey */
 }
 
 /* Navbar */
 .navbar {
-  background-color: #222;
   padding: 15px 0;
+  transition: background 0.3s ease-in-out;
 }
 
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #ffffff; /* white */
 }
 
 .navbar-nav {
@@ -32,13 +35,13 @@ p {
 }
 
 .navbar-nav .nav-link {
-  color: #ffffff !important;
+  color: #e0e0e0 !important; /* light grey */
   margin: 0 10px;
   transition: 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #00aaff !important;
+  color: #bbbbbb !important; /* grey */
 }
 
 /* Sections */
@@ -115,8 +118,8 @@ p {
 .phone-frame {
   width: 187.5px;
   height: 333.5px;
-  background-color: white;
-  border: 8px solid #e6e6e6;
+  background-color: #000; /* black */
+  border: 8px solid #444; /* dark grey */
   border-radius: 18px;
   position: relative;
   display: flex;
@@ -128,7 +131,7 @@ p {
 .phone-top, .phone-bottom {
   width: 100%;
   height: 35px;
-  background-color: #e6e6e6;
+  background-color: #444; /* dark grey */
   position: absolute;
 }
 
@@ -153,22 +156,22 @@ p {
 .camera {
   width: 6px;
   height: 6px;
-  background-color: black;
+  background-color: #000; /* black */
   border-radius: 50%;
 }
 
 .home-button {
   width: 25px;
   height: 25px;
-  background-color: #e6e6e6;
-  border: 1px solid #ccc;
+  background-color: #444; /* dark grey */
+  border: 1px solid #555; /* grey */
   border-radius: 50%;
 }
 
 .screen {
   width: 171.5px;
   height: 313.5px;
-  background-color: black;
+  background-color: #000; /* black */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,10 +184,12 @@ p {
 
 #hero h1 {
   font-size: 3rem;
+  color: #ffffff; /* white */
 }
 
 #hero p {
   font-size: 1.3rem;
+  color: #e0e0e0; /* light grey */
 }
 
 /* Resume Section */
@@ -195,24 +200,26 @@ p {
 #resume h3 {
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #ffffff; /* white */
 }
 
 .list-group-item {
   background-color: transparent;
   border: none;
-  color: white;
+  color: #e0e0e0; /* light grey */
 }
 
 /* Projects Section */
 #projects .card {
-  background-color: #333;
-  color: white;
+  background-color: #1e1e1e; /* dark grey */
+  color: #ffffff; /* white */
   border-radius: 10px;
   margin-bottom: 20px;
+  width: 100%; /* Increase width */
 }
 
 .card-img-top {
-  height: 200px;
+  height: 250px; /* Increase height */
   object-fit: cover;
 }
 
@@ -224,6 +231,21 @@ p {
 /* About Me Section */
 #about p {
   text-align: justify;
+  color: #e0e0e0; /* light grey */
+}
+
+.portrait-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.hobby-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #1e1e1e; /* dark grey */
+  color: #ffffff; /* white */
 }
 
 /* Contact Section */
@@ -233,16 +255,16 @@ p {
 
 .contact-card i {
   font-size: 2rem;
-  color: #00aaff;
+  color: #bbbbbb; /* grey */
 }
 
 .contact-card p {
   margin: 10px 0 0;
-  color: white;
+  color: #e0e0e0; /* light grey */
 }
 
 .contact-card.bg-dark-grey {
-  background-color: #333;
+  background-color: #1e1e1e; /* dark grey */
 }
 
 form {
@@ -251,24 +273,25 @@ form {
 }
 
 input, textarea {
-  background-color: #333;
-  color: white;
+  background-color: #1e1e1e; /* dark grey */
+  color: #e0e0e0; /* light grey */
   border: none;
   padding: 10px;
   border-radius: 5px;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #bbb;
+  color: #bbbbbb; /* grey */
 }
 
 .btn-primary {
-  background-color: #00aaff;
+  background-color: #bbbbbb; /* grey */
   border: none;
+  color: #ffffff; /* white */
 }
 
 .btn-primary:hover {
-  background-color: #0077cc;
+  background-color: #888888; /* grey */
 }
 
 /* Responsive Design */
@@ -278,28 +301,4 @@ input::placeholder, textarea::placeholder {
       text-align: center;
   }
 
-  #hero h1 {
-      font-size: 2.5rem;
-  }
-
-  #hero p {
-      font-size: 1rem;
-  }
-
-  .navbar-nav {
-      text-align: center;
-  }
-
-  .navbar-nav .nav-item {
-      margin-bottom: 10px;
-  }
-
-  #contact .contact-info {
-      text-align: center;
-      margin-bottom: 20px;
-  }
-
-  form {
-      max-width: 100%;
-  }
-}
+  #hero

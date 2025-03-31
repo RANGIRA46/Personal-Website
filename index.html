@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
   <div class="container">
       <a class="navbar-brand" href="#">My Portfolio</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -98,7 +98,7 @@
         <p>Some of my recent work.</p>
         <div class="row">
             <div class="col-md-6">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images/project1.png" class="card-img-top" alt="ZN-Coffee">
                     <div class="card-body">
                         <h5 class="card-title">ZN-Coffee</h5>
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="card">
+                <div class="card project-card">
                     <img src="images/project2.png" class="card-img-top" alt="Forensic psychology">
                     <div class="card-body">
                         <h5 class="card-title">Forensic psychology</h5>
@@ -129,26 +129,29 @@
         <h3>Hobbies</h3>
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/hobby1.jpg" class="card-img-top" alt="Hobby 1">
+                <div class="card hobby-card bg-dark">
+                    <img src="images/photography.jpeg" class="card-img-top portrait-img" alt="Photography">
                     <div class="card-body">
-                        <h5 class="card-title">Hobby 1</h5>
+                        <h5 class="card-title">Photography</h5>
+                        <p class="card-text">Capturing moments through the lens of a camera.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/hobby2.jpg" class="card-img-top" alt="Hobby 2">
+                <div class="card hobby-card bg-dark">
+                    <img src="images/arts.jpg" class="card-img-top portrait-img" alt="Arts">
                     <div class="card-body">
-                        <h5 class="card-title">Hobby 2</h5>
+                        <h5 class="card-title">Arts</h5>
+                        <p class="card-text">Creating visually appealing pieces of art.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card">
-                    <img src="images/hobby3.jpg" class="card-img-top" alt="Hobby 3">
+                <div class="card hobby-card bg-dark">
+                    <img src="images/travelling.jpg" class="card-img-top portrait-img" alt="Travelling">
                     <div class="card-body">
-                        <h5 class="card-title">Hobby 3</h5>
+                        <h5 class="card-title">Travelling</h5>
+                        <p class="card-text">Exploring new cultures and places around the world.</p>
                     </div>
                 </div>
             </div>
@@ -218,5 +221,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

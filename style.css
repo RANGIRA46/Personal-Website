@@ -1,9 +1,10 @@
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #121212;
   color: #ffffff;
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -41,15 +42,36 @@ p {
 }
 
 /* Sections */
-section {
+.section {
   padding: 80px 0;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#hero {
+  background-image: url('images/hero-bg.jpg');
+}
+
+#resume {
+  background-image: url('images/resume-bg.jpg');
+}
+
+#projects {
+  background-image: url('images/projects-bg.jpg');
+}
+
+#about {
+  background-image: url('images/about-bg.jpg');
+}
+
+#contact {
+  background-image: url('images/contact-bg.jpg');
 }
 
 /* Hero Section */
-#hero {
-  background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  height: 100vh;
+#hero .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -69,11 +91,11 @@ section {
 }
 
 .phone-frame {
-  width: 187.5px; /* Reduced width to half the original size */
-  height: 333.5px; /* Reduced height to half the original size */
+  width: 187.5px;
+  height: 333.5px;
   background-color: white;
-  border: 8px solid #e6e6e6; /* Reduced border size */
-  border-radius: 18px; /* Reduced border radius */
+  border: 8px solid #e6e6e6;
+  border-radius: 18px;
   position: relative;
   display: flex;
   align-items: center;
@@ -83,15 +105,15 @@ section {
 
 .phone-top, .phone-bottom {
   width: 100%;
-  height: 35px; /* Reduced height to half the original size */
+  height: 35px;
   background-color: #e6e6e6;
   position: absolute;
 }
 
 .phone-top {
   top: 0;
-  border-top-left-radius: 18px; /* Reduced border radius */
-  border-top-right-radius: 18px; /* Reduced border radius */
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,31 +121,31 @@ section {
 
 .phone-bottom {
   bottom: 0;
-  border-bottom-left-radius: 18px; /* Reduced border radius */
-  border-bottom-right-radius: 18px; /* Reduced border radius */
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .camera {
-  width: 6px; /* Reduced size */
-  height: 6px; /* Reduced size */
+  width: 6px;
+  height: 6px;
   background-color: black;
   border-radius: 50%;
 }
 
 .home-button {
-  width: 25px; /* Reduced size */
-  height: 25px; /* Reduced size */
+  width: 25px;
+  height: 25px;
   background-color: #e6e6e6;
-  border: 1px solid #ccc; /* Reduced border size */
+  border: 1px solid #ccc;
   border-radius: 50%;
 }
 
 .screen {
-  width: 171.5px; /* Reduced width to fit inside the frame */
-  height: 313.5px; /* Reduced height to fit inside the frame */
+  width: 171.5px;
+  height: 313.5px;
   background-color: black;
   display: flex;
   align-items: center;
@@ -145,7 +167,6 @@ section {
 
 /* Resume Section */
 #resume {
-  background-color: #1a1a1a;
   padding: 60px 0;
 }
 
@@ -165,11 +186,7 @@ section {
 }
 
 /* Projects Section */
-#projects {
-  background-color: #222;
-}
-
-.card {
+#projects .card {
   background-color: #333;
   color: white;
   border-radius: 10px;
@@ -235,32 +252,9 @@ input::placeholder, textarea::placeholder {
   background-color: #0077cc;
 }
 
-/* Contact Info */
-#contact .contact-info {
-  margin-top: 20px;
-  text-align: left;
-}
-
-#contact .contact-info p {
-  margin: 5px 0;
-}
-
-#contact .contact-info a {
-  color: #00aaff;
-  text-decoration: none;
-}
-
-#contact .contact-info a:hover {
-  text-decoration: underline;
-}
-
-#contact .contact-info i {
-  margin-right: 10px;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
-  #hero {
+  #hero .container {
       flex-direction: column;
       text-align: center;
   }

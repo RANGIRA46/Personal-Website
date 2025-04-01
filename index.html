@@ -217,10 +217,25 @@
   </div>
 </section>
 
+<!-- Footer -->
+<footer class="footer">
+    <div class="container text-center">
+        <a href="mailto:johnsonbaraka46@gmail.com" class="footer-icon"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/RANGIRA46" target="_blank" class="footer-icon"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/rangiraiii/" target="_blank" class="footer-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/BARAKAJohnson9" target="_blank" class="footer-icon"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/johnson-baraka-0772932a6/" target="_blank" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+        <p>&copy; <span id="year"></span> @johnsonbaraka</p>
+    </div>
+</footer>
+
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
+<script>
+    // Update the year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>

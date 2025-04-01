@@ -131,7 +131,7 @@ p {
 .phone-top, .phone-bottom {
   width: 100%;
   height: 35px;
-  background-color: fff; /* dark grey */
+  background-color: #fff; /* dark grey */
   position: absolute;
 }
 
@@ -295,32 +295,3 @@ input::placeholder, textarea::placeholder {
   background-color: #888888; /* grey */
 }
 
-/* Footer */
-.footer {
-  background-color: transparent;
-  padding: 20px 0;
-  color: #e0e0e0;
-}
-
-.footer-icon {
-  margin: 0 10px;
-  color: #bbbbbb; /* grey */
-  font-size: 1.5rem;
-}
-
-.footer-icon:hover {
-  color: #ffffff; /* white */
-}
-
-.footer p {
-  margin-top: 10px;
-  color: #bbbbbb; /* grey */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  #hero .container {
-      flex-direction: column;
-      text-align: center;
-  }
-}
